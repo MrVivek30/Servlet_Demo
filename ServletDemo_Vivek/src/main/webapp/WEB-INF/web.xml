@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd
+http://xmlns.jcp.org/xml/ns/javaee
+http://xmlns.jcp.org/xml/ns/javaee "
+         version="4.0">
+
+  <display-name>Your Web Application Name</display-name>
+
+<!--    <servlet>-->
+<!--      <servlet-name>com.trackobit.GitHubServlet</servlet-name>-->
+<!--      <servlet-class>com.example.GitHubServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--      <servlet-name>com.trackobit.GitHubServlet</servlet-name>-->
+<!--      <url-pattern>/github</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--      <servlet-name>com.trackobit.LinkedInServlet</servlet-name>-->
+<!--      <servlet-class>com.example.LinkedInServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--      <servlet-name>com.trackobit.LinkedInServlet</servlet-name>-->
+<!--      <url-pattern>/linkedin</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--===============================================-->
+<!--    <servlet>-->
+<!--      <servlet-name>myservlet1</servlet-name>-->
+<!--      <servlet-class>com.trackobit.GitHubServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--      <servlet-name>myservlet1</servlet-name>-->
+<!--      <url-pattern>/github</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+  ==================================for github==========================================
+  <servlet>
+    <servlet-name>GitHubServlet</servlet-name>
+    <servlet-class>com.trackobit.GitHubServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.trackobit.GitHubServlet</servlet-name>
+    <url-pattern>/github</url-pattern>
+  </servlet-mapping>
+
+<!--    <servlet>-->
+<!--      <servlet-name>myservlet2</servlet-name>-->
+<!--      <servlet-class>com.trackobit.LinkedInServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--      <servlet-name>myservlet2</servlet-name>-->
+<!--      <url-pattern>/linkedin</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+  ==================================for linkedin==========================================
+  <servlet>
+    <servlet-name>com.trackobit.LinkedInServlet</servlet-name>
+    <servlet-class>com.trackobit.LinkedInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.trackobit.LinkedInServlet</servlet-name>
+    <url-pattern>/linkedin</url-pattern>
+  </servlet-mapping>
+
+
+  ==================================for portfolio==========================================
+  <servlet>
+    <servlet-name>mypopo</servlet-name>
+    <servlet-class>com.trackobit.PortFolio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.trackobit.PortFolio</servlet-name>
+    <url-pattern>/portfolio</url-pattern>
+  </servlet-mapping>
+
+  Note:::Point::
+  1....==>> agar @webservlet annotaion ka use kiye hai class mai toh web.xml mai servlet ka nam kuch bhi dal skte hai like mypop
+  par mapping fully qualified clas nam hona chahiye
+
+  2...==>> agar @webservlet Annotaion ka use nhi kiye hai class mai toh servlet ka nam fully qualified hona chahihye wrna error dega
+  like this com.trackobit.MyFirst_JS_Projec
+  @MrVivek30
+
+  ==================================for project==========================================
+  <servlet>
+    <servlet-name>com.trackobit.MyFirst_JS_Project</servlet-name>
+    <servlet-class>com.trackobit.MyFirst_JS_Project</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.trackobit.MyFirst_JS_Project</servlet-name>
+    <url-pattern>/project</url-pattern>
+  </servlet-mapping>
+
+</web-app>
